@@ -1,0 +1,69 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+    provider = "prisma-client-js"
+    previewFeatures = ["jsonProtocol"]
+}
+
+datasource db {
+    provider = "postgres"
+    url      = env("DATABASE_URL")
+}
+
+model Questionnaire {
+  id                  String @id @default(uuid())
+  businessInfo1       String?
+  businessInfo2       String?
+  businessInfo3       String?
+  businessInfo4       String?
+  websiteObjectives1  String?
+  websiteObjectives2  String?
+  domainInfo1         String?
+  domainInfo2         String?
+  domainInfo3         String?
+  domainInfo4         String?
+  domainInfo5         String?
+  domainInfo6         String?
+  domainInfo7         String?
+  domainInfo8         String?
+  designAndBranding1  String?
+  designAndBranding2  String?
+  designAndBranding3  String?
+  designAndBranding4  String?
+  content1            String?
+  content2            String?
+  content3            String?
+  content4            String?
+  content5            String?
+  functionality1      String?
+  functionality2      String?
+  functionality3      String?
+  competitors1        String?
+  competitors2        String?
+  timeline1           String?
+  timeline2           String?
+  cta1                String?
+  cta2                String?
+  seo1                String?
+  seo2                String?
+  seo3                String?
+  seo4                String?
+  analytics1          String?
+  analytics2          String?
+  analytics3          String?
+  analytics4          String?
+  cms1                String?
+  cms2                String?
+  maintenance1        String?
+  maintenance2        String?
+  targetedLocations1  String?
+  targetedLocations2  String?
+  socialMedia1        String?
+  testimonials1       String?
+  testimonials2       String?
+  contentUpdates1     String?
+  contentUpdates2     String?
+  contentUpdates3     String?
+  clientInvolvement1  String?
+}
