@@ -74,7 +74,7 @@ export const getServerSideProps: GetServerSideProps<
 > = async (context) => {
   // @ts-ignore
   const { id } = context.params;
-  const apiUrl = `http://localhost:3000/api/questionnaire/${id}`;
+  const apiUrl = `https://webbzy-systems.vercel.app/api/questionnaire/${id}`;
 
   try {
     const response = await axios.get(apiUrl);
